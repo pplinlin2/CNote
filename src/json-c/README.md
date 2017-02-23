@@ -1,5 +1,5 @@
-## json-c
-### Compile library
+# json-c
+## Compile library
 ```console
 # wget https://s3.amazonaws.com/json-c_releases/releases/json-c-0.12.1.tar.gz
 # tar -xf json-c-0.12.1.tar.gz
@@ -9,7 +9,7 @@
 # make
 # cd ..
 ```
-### Makefile
+## Makefile
 ```
 CFLAGS = -Ijson-c
 LDFLAGS = -Ljson-c/.libs
@@ -18,7 +18,7 @@ LIBS = -ljson-c
 all:
 	$(CC) test.c -o test $(CFLAGS) $(LDFLAGS) $(LIBS)
 ```
-### C program
+## C program
 可以先看下面執行的結果，再回來看程式的細節，先以python的觀點來看這些function
 
 |C|Python|
